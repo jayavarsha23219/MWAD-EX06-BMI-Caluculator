@@ -1,5 +1,5 @@
 # Ex06 BMI Calculator
-## Date: 20:05:2025
+## Date: 14:05:2025
 
 ## AIM
 To create a BMI calculator using React Router 
@@ -93,150 +93,141 @@ export default App;
 ```
 App.css
 ```
-* {
-  box-sizing: border-box;
+{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #89f7fe, #66a6ff);
-  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #e0f7fa;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  color: #444;
 }
 
 .container {
-  width: 100%;
-  max-width: 400px;
   background-color: #ffffff;
-  padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
   text-align: center;
 }
 
-.container h1 {
+h1 {
+  font-size: 28px;
   margin-bottom: 20px;
-  color: #333;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  color: #00796b;
+  font-weight: 700;
 }
 
 .input-group {
-  text-align: left;
+  margin-bottom: 20px;
 }
 
 .input-group label {
-  font-weight: 600;
-  margin-bottom: 6px;
-  display: block;
-  color: #444;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #00796b;
 }
 
 .input-group input {
   width: 100%;
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  transition: border-color 0.3s;
-}
-
-.input-group input:focus {
-  border-color: #66a6ff;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #00796b;
+  border-radius: 8px;
+  background-color: #e0f7fa;
+  color: #00796b;
   outline: none;
 }
 
-/* Buttons container */
+.input-group input:focus {
+  border-color: #004d40;
+  background-color: #ffffff;
+}
+
 .buttons {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 15px;
 }
 
 .btn {
-  flex: 1;
-  padding: 10px;
-  font-size: 1rem;
+  width: 48%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
-  color: #fff;
+  transition: all 0.3s ease;
 }
 
 .calculate {
-  background-color: #007bff;
+  background-color: #00796b;
+  color: white;
 }
 
 .calculate:hover {
-  background-color: #0056b3;
+  background-color: #004d40;
 }
 
 .reset {
-  background-color: #dc3545;
+  background-color: #f44336;
+  color: white;
 }
 
 .reset:hover {
-  background-color: #b02a37;
+  background-color: #d32f2f;
 }
 
-/* Result section */
 .result {
-  margin-top: 20px;
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #f1f8e9;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-.result h2 {
-  font-size: 1.5rem;
-  color: #222;
+h2 {
+  font-size: 32px;
+  color: #00796b;
+  margin-bottom: 10px;
 }
 
 .category {
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-/* Category colors */
-.category.underweight {
-  color: #ffa500;
+.underweight {
+  color: #ffeb3b;
 }
 
-.category.normal-weight {
-  color: #28a745;
+.normal-weight {
+  color: #388e3c;
 }
 
-.category.overweight {
-  color: #ffc107;
+.overweight {
+  color: #ff9800;
 }
 
-.category.obesity {
-  color: #dc3545;
-}
-
-/* Responsive tweaks */
-@media (max-width: 480px) {
-  .container {
-    margin: 20px;
-    padding: 20px;
-  }
-
-  .buttons {
-    flex-direction: column;
-  }
+.obesity {
+  color: #e64a19;
 }
 
 ```
 
 ## OUTPUT
-vvvv
+![Screenshot (155)](https://github.com/user-attachments/assets/923dd35e-9786-45f0-8309-3552291be674)
+
 
 ## RESULT
 The program for creating BMI Calculator using React Router is executed successfully.
+
